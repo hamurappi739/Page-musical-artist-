@@ -1,0 +1,47 @@
+.switch {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.switch__label {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.switch__toggle {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+.switch__input:checked + .switch__label {
+  background-color: gray;
+}
+
+.switch__input:checked + .switch__label .switch__toggle {
+  right: 0;
+  left: auto;
+}
+
+.switch__input {
+  display: none;
+}
+
+.night {
+  color: aliceblue;
+  font-size: 8px;
+  position: absolute;
+  top: 25px;
+}

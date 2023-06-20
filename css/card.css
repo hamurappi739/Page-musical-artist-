@@ -1,0 +1,307 @@
+body {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top, #304e2f 20%, #3228be 50%, #181716 80%);
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    
+}
+  
+.profile {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  width: 25%;
+  margin: 10px;
+  transition: all 0.9s ease;
+}
+
+
+  .profile__avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    
+}
+  
+  .profile__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+  
+  .profile__post {
+    font-weight: 400;
+    display: block;
+    font-size: 0.4em;
+    margin-top: .5em;
+}
+  
+  .profile__contacts {
+    margin-top: 1.25em;
+}  
+  
+  .profile__contact {
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+  
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;  
+    color: #ffffff;
+    
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+  
+  .profile__contact:nth-child(3n+2) {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+  
+  .profile__contact_facebook {
+    background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/user-card/img/facebook_white.svg");
+}
+  
+  .profile__contact_twitter {
+    background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/user-card/img/twitter_white.svg");
+}
+  
+  .profile__contact_instagram {
+    background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/user-card/img/instagram_white.svg");
+}
+  
+@media (min-width: 1301px), (max-width: 767px) {
+  
+.profile {
+      position: relative;
+}
+  
+.profile__preview:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background: #481bae;
+}
+
+/* .profile__preview:hover {
+  opacity: 0.6;
+} */
+
+.profile:hover {
+  font-size: 19px;
+  opacity: 0.9;
+  background: white;
+}
+  
+    .profile__body {
+      box-sizing: border-box;
+      padding: 5px;
+      width: 100%;
+  
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);    
+    }  
+}
+  
+  @media (min-width: 768px) and (max-width: 1300px) {
+  
+    .profile {
+      padding: 30px;
+      background: #481bae;
+      font-size: 12px;
+    }
+  
+    .profile__preview {
+      margin: 0 auto 20px;
+      overflow: hidden;
+      width: 140px;
+      height: 140px;
+      border: 5px solid #ffffff;
+      border-radius: 50%;
+    }
+}
+  
+  @media (max-width: 640px) {
+    
+    .profile {
+      font-size: 12px;
+    }
+}
+
+
+@media ( min-width:640px ), (max-width: 768px) {
+  .profile {
+    font-size: 12px;
+  }
+}
+
+.info::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.info::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.info {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+  
+}
+
+.info__artist {
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+font-size: 16px;
+color:white;
+text-align: center;
+width: 33%;
+margin: 20px;
+min-height: 50%;
+font-size: 20px;
+padding: 20px;
+background: #181716;
+}
+
+
+@media ( max-width:420px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    text-align: center;
+  }
+  .profile {
+    font-size: 8px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+
+  }
+  
+  
+    .profile__avatar {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      
+  }
+    
+    .profile__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 25px;
+  }
+    
+    .profile__post {
+      font-weight: 400;
+      display: block;
+      font-size: 15px;
+      margin-top: .5em;
+  }
+    
+    .profile__contacts {
+      margin-top: 1.25em;
+  }  
+    
+    .profile__contact {
+      width: 1.2em;
+      height: 1.2em;
+      display: inline-block;
+    
+      text-indent: -9999px;
+      overflow: hidden;
+      text-decoration: none;  
+      color: #ffffff;
+      
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+  }
+    
+    .profile__contact:nth-child(3n+2) {
+      margin-right: 1em;
+      margin-left: 1em;
+  }
+    
+    .profile__contact_facebook {
+      background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/user-card/img/facebook_white.svg");
+  }
+    
+    .profile__contact_twitter {
+      background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/user-card/img/twitter_white.svg");
+  }
+    
+    .profile__contact_instagram {
+      background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/user-card/img/instagram_white.svg");
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+      
+  }
+    
+    .info__artist {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    width: 80%;
+    min-height: 50%;
+    font-size: 20px;
+    padding: 20px;
+    background: #181716;
+  }
+  .info::before {
+   display:none;
+  }
+  
+  .info::after {
+    display: none;
+  }
+}
+    
+
+
